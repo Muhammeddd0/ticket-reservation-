@@ -1,0 +1,78 @@
+<!-- <p-table [value]="tickets" [paginator]="true" [rows]="5" [rowsPerPageOptions]="[5, 10, 20]" responsiveLayout="scroll">
+    <ng-template  pTemplate="header">
+      <tr >
+        <th class="text-center">#</th>
+        <th class="text-center">المستخدم</th>
+        <th class="text-center">رقم التذكرة</th>
+        <th class="text-center">قيمة التذكرة</th>
+        <th class="text-center">السينمات</th>
+        <th class="text-center">عدد الأشخاص</th>
+        <th class="text-center">عدد مرات الشراء</th>
+        <th class="text-center">التذكرة</th>
+      </tr>
+    
+    </ng-template>
+    <ng-template pTemplate="body" let-ticket let-i="rowIndex">
+      <tr>
+        <td>{{ i + 1 }}</td>
+        <td class=" text-center">
+          <img src="../../../assets/man.jpg" class="avatar" alt="User Avatar" />
+          <span>{{ ticket.username }}</span>
+        </td>
+        <td class="text-center">{{ ticket.ticketNumber }}</td>
+        <td class="text-center">{{ ticket.price }}</td>
+        <td class="text-center">{{ ticket.cinema }}</td>
+        <td class="text-center">{{ ticket.people }}</td>
+        <td class="text-center">{{ ticket.purchases }}</td>
+        <td class="text-center">
+            <i class="fa-solid fa-file-arrow-down"></i>
+        </td>
+      </tr>
+      <hr>
+    </ng-template>
+    
+  </p-table>
+   -->
+
+
+
+
+
+
+
+
+
+
+   <p-table [value]="filteredTickets" [paginator]="true" [rows]="5" [rowsPerPageOptions]="[5, 10, 20]" responsiveLayout="scroll">
+    <ng-template pTemplate="header">
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">المستخدم</th>
+        <th class="text-center">رقم التذكرة</th>
+        <th class="text-center">قيمة التذكرة</th>
+        <th class="text-center">السينمات</th>
+        <th class="text-center">عدد الأشخاص</th>
+        <th class="text-center">عدد مرات الشراء</th>
+        <th class="text-center">التذكرة</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-ticket let-i="rowIndex">
+      <tr>
+        <td>{{ i + 1 }}</td>
+        <td class="text-center">
+          <img src="../../../assets/man.jpg" class="avatar" alt="User Avatar" />
+          <span>{{ ticket.username }}</span>
+        </td>
+        <td class="text-center">{{ ticket.ticketNumber }}</td>
+        <td class="text-center">{{ ticket.price }}</td>
+        <td class="text-center">{{ ticket.cinema }}</td>
+        <td class="text-center">{{ ticket.people }}</td>
+        <td class="text-center">{{ ticket.purchases }}</td>
+        <td class="text-center">
+          <i class="fa-solid fa-file-arrow-down"></i>
+        </td>
+      </tr>
+      <hr>
+    </ng-template>
+  </p-table>
+  

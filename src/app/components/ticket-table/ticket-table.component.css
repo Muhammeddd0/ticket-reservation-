@@ -1,0 +1,57 @@
+/* تحسين تنسيق الجدول */
+.p-datatable table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* تخصيص تنسيق عناوين الجدول */
+  .p-datatable thead th {
+    text-align: center; /* محاذاة العناوين في الوسط */
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #f8f8f8; /* لون خلفية خفيف */
+  }
+  
+  /* تخصيص تنسيق الخلايا */
+  .p-datatable td {
+    padding: 10px 5px; /* مسافة من جميع الجوانب */
+    text-align: center; /* محاذاة النص في الوسط */
+    vertical-align: middle; /* محاذاة عمودية في الوسط */
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* تخصيص تنسيق صفوف الجدول */
+  .p-datatable tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* خلفية خفيفة للصفوف الزوجية */
+  }
+  
+  /* تخصيص زر تحميل PDF */
+  .p-button.p-button-icon-only {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  
+  .p-button.p-button-icon-only .pi {
+    font-size: 1.2rem;
+  }
+  
+  
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .fa-file-arrow-down{
+    color: var(--main-color);
+  }
+  

@@ -1,0 +1,35 @@
+<div class="ticket">
+    <div class="circle-left"></div>
+    <div class="circle-right"></div>
+
+    <div class="row align-items-baseline mt-3">
+      <div class="col-md-2 btn">
+        <i class="fa-solid fa-trash text-white ms-4"></i>
+      </div>
+      <div class="col-md-10 ticket-body">
+        <p class="text-white ms-5 mt-2 f-sm">عرض التذكرة الخاصة بالفيلم</p>
+        <div class="bg-white copy-label d-flex align-items-center">
+          <div class="btn" (click)="copyContent()">
+            <i class="fa-regular fa-copy"></i> 
+          </div>
+          <p class="m-0 f-sm">{{ htmlToAdd }}</p> 
+        </div>
+        <p class="text-white ms-5 mt-2 f-sm">فعال حتى 15 يونيو 2023</p>
+      </div>
+    </div>
+
+    <div class="row ticket-footer ">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="col-md-2 ms-4 ">
+            <app-qr ></app-qr>
+          </div>
+          <div dir="rtl" class="text-white me-5 fs-6 d-flex align-items-center ">
+            <p>خصم <br>25 %</p>
+           <a dir="ltr" class=" text-white share-btn" href="">
+            مشاركة
+            <i class="fa-solid fa-up-right-from-square ms-2"></i>
+           </a>
+          </div>
+    </div>
+    </div>
+</div>

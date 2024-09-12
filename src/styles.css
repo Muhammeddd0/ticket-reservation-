@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+/* global styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+.btn{
+    cursor: pointer;
+}
+body{
+    font-family: "Cairo", sans-serif;
+    background-color: #f3f5f7;
+}
+:root{
+    --main-color: #8A74F9;
+    --bg-btn :  rgb(231, 234, 237);
+}
+.main-border{
+    border-radius: 8px;
+}
+.fs-sm{
+    font-size: 14px;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

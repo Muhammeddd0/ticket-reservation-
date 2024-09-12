@@ -1,0 +1,116 @@
+.ticket {
+  background-color: var(--main-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1; /* تعديل z-index لتجنب القيم السالبة */
+}
+
+.ticket::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../assets/pattern.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: 0; /* يجب أن يكون خلف جميع العناصر */
+}
+
+.ticket::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-top: 2px dashed rgb(231, 230, 230);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.ticket .circle-left,
+.ticket .circle-right {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3; /* تأكد من أنها فوق الخلفية */
+}
+
+.ticket .circle-left {
+  left: -12px;
+}
+
+.ticket .circle-right {
+  right: -12px;
+}
+
+#copyButton {
+  background-color: #d1d1d1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#copyButton:hover {
+  background-color: #c7c7c7;
+}
+
+.copy-label {
+  width: 230px;
+  border-radius: 8px;
+  
+  z-index: 10; /* تأكيد وجودها فوق الخلفية */
+}
+
+.fa-copy {
+  font-size: 20px; /* تكبير حجم الأيقونة */
+  color: var(--main-color);
+  z-index: 10;
+  padding: 5px; /* إضافة مساحة حول الأيقونة */
+  cursor: pointer; /* تأكيد ظهور المؤشر */
+}
+
+.fa-copy:hover {
+  color: #250781;
+}
+
+.ticket-body {
+  z-index: 10;
+}
+
+.f-sm {
+  font-size: 13px;
+}
+
+.ticket-footer {
+  margin-top: 70px;
+}
+.share-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff; /* Adjust the border color as needed */
+  padding: 0; /* Remove padding */
+  cursor: pointer;
+}
+.share-btn{
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding:4px ;
+  margin-right: 30px;
+}
